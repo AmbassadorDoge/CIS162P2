@@ -1,0 +1,69 @@
+/* main.css */
+
+/* Reset default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background color to white */
+body {
+    background-color: white;
+}
+
+/* Add your space-related styles here */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.heading {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+    text-align: center;
+    font-family: cursive;
+    font-style: italic;
+}
+
+.nav {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 2;
+    margin: 0 auto;
+    padding: 1px;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}   
+li {
+    float: left;
+}
+a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+    font-family: fantasy;
+    text-underline-offset: 20px;
+    font-size: 30px;
+  }
+
+.picture {
+    grid-column: 1;
+    grid-row: 3;
+}
+img {
+    border-radius: 20px;
+    border-color: black     ;
+    border-width: 6px;
+    border-style: solid;
+}
