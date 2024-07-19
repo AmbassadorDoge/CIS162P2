@@ -36,6 +36,7 @@ body {
     grid-row: 2;
     margin: 0 auto;
     padding: 1px;
+    
     text-align: center;
 }
 ul {
@@ -43,6 +44,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    border-radius: 10px;
     
 }   
 li {
@@ -66,4 +68,62 @@ img {
     border-color: black     ;
     border-width: 6px;
     border-style: solid;
+}
+form {
+    grid-column: 1;
+    grid-row: 4;
+    text-align: center;
+    display:block;
+}
+  input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 5px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=reset] {
+    width: 100%;
+    background-color: lightcoral;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: none;
+  width: 250px;
+  grid-row-start:4;
+  margin-right: 20px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
 }
